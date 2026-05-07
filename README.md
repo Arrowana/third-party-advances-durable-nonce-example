@@ -24,4 +24,3 @@ Run it with:
 ```sh
 cargo test
 ```
-# third-party-advances-durable-nonce-example

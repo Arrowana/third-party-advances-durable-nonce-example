@@ -1,0 +1,22 @@
+[package]
+name = "third-party-advances-durable-nonce-example"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+# Fork/rev used here because it carries the Solana v4 stack with message v1 support.
+litesvm = { git = "https://github.com/Arrowana/litesvm", rev = "88f0496efb13dcadd3be36d51459dc8c4c1e80be" }
+solana-account = { version = "4.1.0", features = ["wincode"] }
+solana-address = { version = "2.0", features = ["decode"] }
+solana-instruction = "3.0"
+solana-keypair = "3.1"
+solana-message = { version = "4.0.0", features = ["wincode"] }
+solana-native-token = "3.0"
+solana-nonce = { version = "3.0", features = ["wincode"] }
+solana-program-option = "3.0"
+solana-program-pack = "3.0"
+solana-signer = "3.0"
+solana-system-interface = { version = "3.1", features = ["wincode"] }
+solana-transaction = { version = "4.0.0", features = ["wincode"] }
+spl-token-interface = "2.0.0"
